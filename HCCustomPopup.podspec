@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HCCustomPopup"
-  s.version      = "1.0.0"
+  s.version      = "1.0"
   s.summary      = "Custom popup view that allows you to place any custom view in it."
   s.homepage     = "https://github.com/laeroah/HCCustomPopup"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
