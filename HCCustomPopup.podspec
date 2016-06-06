@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Hao Wang" => "https://github.com/laeroah" }
   s.source       = { :git => "https://github.com/laeroah/HCCustomPopup.git", :tag => s.version }
   s.platform     = :ios, '7.0'
-  s.source_files = 'AMSlideOut', '*.{h,m}'
-  s.resources    = "AMSlideOut/*.png"
+  s.source_files = 'CustomPopup', '*.{h,m}'
   s.framework    = 'QuartzCore'
   s.requires_arc = true
 end

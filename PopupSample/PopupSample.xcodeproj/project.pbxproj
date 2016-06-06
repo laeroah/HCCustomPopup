@@ -15,6 +15,8 @@
 		AFBE60F61D04640B00831216 /* HCCustomPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBE60F51D04640B00831216 /* HCCustomPopupView.m */; };
 		AFBE60F81D0472B600831216 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE60F71D0472B600831216 /* PromptView.swift */; };
 		AFBE60FA1D04731600831216 /* PromptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBE60F91D04731600831216 /* PromptView.xib */; };
+		AFD2C09D1D0578E20019D481 /* HCCustomPopup.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AFD2C09B1D0578E20019D481 /* HCCustomPopup.podspec */; };
+		AFD2C09E1D0578E20019D481 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AFD2C09C1D0578E20019D481 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +27,13 @@
 		AF53C4471CFB48FF0037681C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF53C44A1CFB48FF0037681C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF53C44C1CFB48FF0037681C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFBE60F31D04640A00831216 /* PopupSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PopupSample-Bridging-Header.h"; path = "../../CustomPopup/PopupSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFBE60F41D04640B00831216 /* HCCustomPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCustomPopupView.h; sourceTree = "<group>"; };
 		AFBE60F51D04640B00831216 /* HCCustomPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCustomPopupView.m; sourceTree = "<group>"; };
 		AFBE60F71D0472B600831216 /* PromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
 		AFBE60F91D04731600831216 /* PromptView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PromptView.xib; sourceTree = "<group>"; };
+		AFD2C09B1D0578E20019D481 /* HCCustomPopup.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HCCustomPopup.podspec; path = ../HCCustomPopup.podspec; sourceTree = "<group>"; };
+		AFD2C09C1D0578E20019D481 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AFD2C09F1D057B3D0019D481 /* PopupSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PopupSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		AF53C4341CFB48FF0037681C = {
 			isa = PBXGroup;
 			children = (
+				AFD2C09B1D0578E20019D481 /* HCCustomPopup.podspec */,
+				AFD2C09C1D0578E20019D481 /* README.md */,
 				AFBE60EF1D04624B00831216 /* CustomPopup */,
 				AF53C43F1CFB48FF0037681C /* PopupSample */,
 				AF53C43E1CFB48FF0037681C /* Products */,
@@ -63,7 +69,7 @@
 		AF53C43F1CFB48FF0037681C /* PopupSample */ = {
 			isa = PBXGroup;
 			children = (
-				AFBE60F31D04640A00831216 /* PopupSample-Bridging-Header.h */,
+				AFD2C09F1D057B3D0019D481 /* PopupSample-Bridging-Header.h */,
 				AF53C4401CFB48FF0037681C /* AppDelegate.swift */,
 				AF53C4421CFB48FF0037681C /* ViewController.swift */,
 				AF53C4441CFB48FF0037681C /* Main.storyboard */,
@@ -147,6 +153,7 @@
 				AFBE60FA1D04731600831216 /* PromptView.xib in Resources */,
 				AF53C44B1CFB48FF0037681C /* LaunchScreen.storyboard in Resources */,
 				AF53C4481CFB48FF0037681C /* Assets.xcassets in Resources */,
+				AFD2C09D1D0578E20019D481 /* HCCustomPopup.podspec in Resources */,
 				AF53C4461CFB48FF0037681C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +167,7 @@
 			files = (
 				AFBE60F81D0472B600831216 /* PromptView.swift in Sources */,
 				AF53C4431CFB48FF0037681C /* ViewController.swift in Sources */,
+				AFD2C09E1D0578E20019D481 /* README.md in Sources */,
 				AFBE60F61D04640B00831216 /* HCCustomPopupView.m in Sources */,
 				AF53C4411CFB48FF0037681C /* AppDelegate.swift in Sources */,
 			);
@@ -279,7 +287,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacknocraft.PopupSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../CustomPopup/PopupSample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./PopupSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -293,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacknocraft.PopupSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../CustomPopup/PopupSample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./PopupSample-Bridging-Header.h";
 			};
 			name = Release;
 		};

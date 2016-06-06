@@ -15,7 +15,6 @@ const static CGFloat kCustomPopupViewMotionEffectExtent                 = 10.0;
 
 @implementation HCCustomPopupView
 
-@synthesize dialogView, containerView;
 
 - (id)initWithContentView:(UIView *)contentView
 {
@@ -29,7 +28,7 @@ const static CGFloat kCustomPopupViewMotionEffectExtent                 = 10.0;
 
 - (void)show
 {
-    dialogView = [self contentView];
+    UIView *dialogView = [self contentView];
     
     dialogView.frame = CGRectMake((self.frame.size.width - dialogView.frame.size.width)/2, (self.frame.size.height - dialogView.frame.size.height)/2, dialogView.frame.size.width, dialogView.frame.size.height);
     
@@ -65,6 +64,7 @@ const static CGFloat kCustomPopupViewMotionEffectExtent                 = 10.0;
 
 - (void)dismiss
 {
+    UIView *dialogView = [self contentView];
     CATransform3D currentTransform = dialogView.layer.transform;
     
     CGFloat startRotation = [[dialogView valueForKeyPath:@"layer.transform.rotation.z"] floatValue];
@@ -90,6 +90,8 @@ const static CGFloat kCustomPopupViewMotionEffectExtent                 = 10.0;
 
 - (void)dismissWithComplete:(void (^)())complete
 {
+    
+    UIView *dialogView = [self contentView];
     CATransform3D currentTransform = dialogView.layer.transform;
     
     CGFloat startRotation = [[dialogView valueForKeyPath:@"layer.transform.rotation.z"] floatValue];
@@ -147,6 +149,7 @@ const static CGFloat kCustomPopupViewMotionEffectExtent                 = 10.0;
     UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
     motionEffectGroup.motionEffects = @[horizontalEffect, verticalEffect];
     
+    UIView *dialogView = [self contentView];
     [dialogView addMotionEffect:motionEffectGroup];
 }
 
